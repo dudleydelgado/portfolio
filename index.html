@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ecacc97c4f.js" crossorigin="anonymous"></script>
+    <title>Dudley Delgado | Frontend developer</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="navbar__left">
+                <img class="navbar__logo" src="./assets/logo-pagina-portafolio.png" alt="logo-dudley-delgado">
+            </div>
+            <div class="navbar__rigth">
+                <ul class="navbar__list">
+                    <li class="navbar__list__elements">
+                        <a class="navbar__enlaces" href="#">About</a>
+                    </li>
+                    <li class="navbar__list__elements">
+                        <a class="navbar__enlaces" href="#">Skills</a>
+                    </li>
+                    <li class="navbar__list__elements">
+                        <a class="navbar__enlaces" href="#">Projects</a>
+                    </li>
+                    <li class="navbar__list__elements">
+                        <a class="navbar__enlaces" href="#">Contact</a>
+                    </li>
+                    <li class="navbar__list__elements">
+                        <button class="switch__desktop" id="switch__desktop">
+                            <span><i class="fa-solid fa-sun"></i></span>
+                            <span><i class="fa-solid fa-moon"></i></span>
+                      </button>
+                    </li>
+                </ul>
+                <picture>
+                    <img class="nav__rigth__hamburguer" src="./assets/icons/icon_menu.svg" alt="menu-icon-svg">
+                </picture>
+            </div>
+
+            <div class="mobileMenu inactive">
+                <ul class="mobileMenu__list">
+                    <li class="mobileMenu__elements">
+                        <a href="#">ABOUT</a>
+                      </li>
+                      <li class="mobileMenu__elements">
+                        <a href="#">SKILLS</a>
+                      </li>
+                      <li class="mobileMenu__elements">
+                        <a href="#">PROJECTS</a>
+                      </li>
+                      <li class="mobileMenu__elements">
+                        <a href="#">CONTACT</a>
+                      </li>
+                      <button class="switch" id="switch">
+                            <span><i class="fa-solid fa-sun"></i></span>
+                            <span><i class="fa-solid fa-moon"></i></span>
+                      </button>
+                </ul>
+                <div class="redesSociales">
+                    <a href="https://github.com/dudleydelgado" target="_blank"><img class="redesSociales__img" src="./assets/icons/github-icon-rrss.png" alt="github-icon"></a>
+                    <a href="https://www.linkedin.com/in/dudley-arturo-delgado/" target="_blank"><img class="redesSociales__img" src="./assets/icons/linkedin-icon-rrss.png" alt="linkedin-icon"></a>
+                    <a href="mailto:contactodudleydelgado@gmail.com" target="_blank"><img class="redesSociales__img" src="./assets/icons/email-icon-rrss.png" alt="email-icon"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="hero">
+        <section class="dudleyDelgado">
+            <div class="dudleyDelgadoLeft">
+                <h2 class="dudleyDelgado__subtitle">Hey! soy Dudley Delgado</h2>
+                <h1 class="dudleyDelgado__title">Frontend Developer</h1>
+                <p class="dudleyDelgado__paragraph">Mi pasión es construir código para aportar soluciones</p>
+            </div>
+            <div class="dudleyDelgadoRigth">
+                <img class="dudleyDelgadoRigth__img" src="./assets/foto-portfolio-dudley-delgado.png" alt="">
+            </div>
+        </section>
+        <section class="aboutMe">
+                <h2 class="aboutMe__title">Acerca de mi</h2>
+                <p class="aboutMe__paragraph aboutMe__paragraph--paragraph">Hola soy Dudley Delgado entusiasta de la técnologia y amante de aprender algo nuevo todos los días, llevo más de 4 años como freelancer realizando webs en wordpress para clientes de todas partes del mundo. Poco a poco fui conociendo el código y agregando fragmentos a las webs que realizaba hasta un punto en que me di cuenta que esto era mucho más divertido y personalizable que usar un gestor de contenido.</p>
+                <p class="aboutMe__paragraph aboutMe__paragraph--paragraph">Ahora estoy constantemente aprendiendo nuevas técnologias y aplicandolas en cada proyecto</p>
+                <p class="aboutMe__paragraph aboutMe__paragraph--paragraph">Tecnologías y herramientas que actualmente estoy explorando y sobre las que estoy interesado.</p>
+                <ul class="aboutMe__list">
+                    <li class="aboutMe__skills">HTML5</li>
+                    <li class="aboutMe__skills">CSS3</li>
+                    <li class="aboutMe__skills">JAVASCRIPT</li>
+                    <li class="aboutMe__skills">REACT</li>
+                    <li class="aboutMe__skills">SASS</li>
+                    <li class="aboutMe__skills">Blogging & Technical Writing</li>
+                </ul>
+        </section>
+        <section class="skills">
+            <div>
+                <h2 class="skills__title">Skills</h2>
+            </div>
+            <div class="skills__icons">
+                <div class="skills__containerIcon">
+                <i class="fa-brands fa-git-alt skill__icon"></i>
+                </div>
+                <div class="skills__containerIcon">
+                    <i class="fa-brands fa-html5 skill__icon"></i>
+                </div>
+                <div class="skills__containerIcon">
+                    <i class="fa-brands fa-css3-alt skill__icon"></i>
+                </div>
+                <div class="skills__containerIcon">
+                    <i class="fa-brands fa-square-js skill__icon"></i>
+                </div>
+                <div class="skills__containerIcon">
+                    <i class="fa-brands fa-wordpress skill__icon"></i>
+                </div>
+                <div class="skills__containerIcon">
+                    <i class="fa-brands fa-react skill__icon"></i>
+                </div>
+        </div>
+    </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

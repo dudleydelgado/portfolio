@@ -1,0 +1,476 @@
+/*Reset CSS*/
+:root {
+  --blanco: #FFF;
+  --negro: #111111;
+  --gris-oscuro: #222222;
+  /* Tipografía */
+  --font-family-titles: 'Rubik', sans-serif;
+  --font-family-paragraph: Arial, Helvetica, sans-serif;
+  --h1-titles: 2.8rem;
+  --h2-titles: 2.2rem;
+  --h3-titles: 1.8rem;
+  --paragraph: 1.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  background: var(--blanco);
+  color: var(--negro);
+  line-height: 1.4em;
+  transition: .5s ease all;
+}
+
+body.dark{
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    position: fixed;
+    width: 100%;
+    font-family: var(--font-family-titles);
+    font-weight: 500;
+    font-size: 1.2rem;
+    top: 0;
+    color: var(--negro);
+    z-index: 99;
+}
+
+body.dark .navbar{
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+}
+
+.navbar__logo{
+    width: 80px;
+}
+
+body.dark .navbar__logo{
+    filter: invert(1);
+}
+
+.navbar__list{
+    display: none;
+}
+
+.nav__rigth__hamburguer{
+    cursor: pointer;
+}
+
+body.dark .nav__rigth__hamburguer{
+    filter: invert(1);
+}
+
+.mobileMenu{
+    padding: 24px;
+    right: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    position: absolute;
+    top: 100px;
+}
+
+body.dark .mobileMenu{
+    background-color: var(--gris-oscuro);
+}
+
+.mobileMenu__list{
+    margin-top: 20px;
+}
+
+.inactive {
+    display: none;
+}
+
+.mobileMenu__elements{
+    margin-bottom: 20px;
+}
+
+.switch{
+    background-color: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active{
+    background: orange;
+    color: var(--negro);
+}
+
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    display: block;
+    background: none;
+    color: var(--blanco);
+}
+
+.redesSociales{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+body.dark .redesSociales{
+    filter: invert(1);
+}
+
+.redesSociales__img{
+    width: 60px;
+}
+
+
+.dudleyDelgado{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dudleyDelgado__title{
+    font-size: var(--h1-titles);
+    font-family: var(--font-family-titles);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dudleyDelgado__subtitle{
+    font-size: var(--h2-titles);
+    font-family: var(--font-family-titles);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dudleyDelgado__paragraph{
+    font-family: var(--font-family-paragraph);
+    font-weight: 300;
+}
+
+.dudleyDelgadoRigth{
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.dudleyDelgadoRigth__img{
+    width: 400px;
+    position: relative;
+    bottom: 50px;
+    border-radius: 50%;
+}
+
+.aboutMe{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 80px 30px;
+}
+
+body.dark .aboutMe{
+    background-color: var(--gris-oscuro);
+}
+
+.aboutMe__title{
+    font-size: var(--h2-titles);
+    font-family: var(--font-family-titles);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.aboutMe__paragraph{
+    text-align: justify;
+    font-size: var(--paragraph);
+    font-family: var(--font-family-paragraph);
+    line-height: 1.4;
+}
+
+.aboutMe__paragraph--paragraph{
+    margin-bottom: 20px;
+}
+
+.aboutMe__list{
+    font-size: var(--paragraph);
+    font-family: var(--font-family-paragraph);
+    line-height: 1.2;
+}
+
+.aboutMe__skills{
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.skills__title{
+    font-size: var(--h2-titles);
+    font-family: var(--font-family-titles);
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.skills__icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    text-align: center;
+}
+
+.skills__containerIcon{
+    background-color: var(--negro);
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__containerIcon:hover{
+    background-color: orange;
+    transition: .5s ease all;
+}
+
+body.dark .skills__containerIcon{
+    background-color: var(--gris-oscuro);
+}
+
+body.dark .skills__containerIcon:hover{
+    background-color: orange;
+    transition: .5s ease all;
+}
+
+
+.skill__icon{
+    font-size: 4rem;
+    color: var(--blanco);
+}
+
+
+
+@media (min-width: 992px){
+    .nav__rigth__hamburguer{
+        display: none;
+    }
+
+    .mobileMenu{
+        display: none;
+    }
+
+    .navbar{
+        font-size: 1.6rem;
+    }
+
+    .navbar__list{
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .switch__desktop{
+        background-color: #343D5B;
+        border-radius: 1000px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+    }
+    
+    .switch__desktop::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #F1F1F1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+    }
+    
+    .switch__desktop.active{
+        background: orange;
+        color: var(--negro);
+    }
+    
+    .switch__desktop.active::after{
+        right: 0;
+        left: unset;
+    }
+    
+    .switch__desktop span{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: var(--blanco);
+    }
+
+    .navbar__enlaces:hover{
+        border-bottom: 2px solid var(--negro);
+    }
+
+    body.dark .navbar__enlaces:hover{
+        border-bottom: 2px solid var(--blanco);
+    }
+
+    .dudleyDelgado{
+        display: flex;
+        height: 80vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .dudleyDelgado__title{
+        font-size: 3.8rem;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .dudleyDelgado__subtitle{
+        font-size: 2.0rem;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .dudleyDelgado__paragraph{
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .skills__icons{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .skills__containerIcon{
+        width: 150px;
+        height: 150px;
+    }
+
+    .skill__icon{
+        font-size: 5rem;
+    }
+}
