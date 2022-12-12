@@ -6,8 +6,8 @@
   /* Tipografía */
   --font-family-titles: 'Rubik', sans-serif;
   --font-family-paragraph: Arial, Helvetica, sans-serif;
-  --h1-titles: 2.8rem;
-  --h2-titles: 2.2rem;
+  --h1-titles: 2.2rem;
+  --h2-titles: 2.0rem;
   --h3-titles: 1.8rem;
   --paragraph: 1.4rem;
 }
@@ -234,7 +234,7 @@ body.dark .redesSociales{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .dudleyDelgado__title{
@@ -242,6 +242,7 @@ body.dark .redesSociales{
     font-family: var(--font-family-titles);
     font-weight: 700;
     margin-bottom: 30px;
+    line-height: 1.0;
 }
 
 .dudleyDelgado__subtitle{
@@ -249,6 +250,7 @@ body.dark .redesSociales{
     font-family: var(--font-family-titles);
     font-weight: 700;
     margin-bottom: 30px;
+    line-height: 1.0;
 }
 
 .dudleyDelgado__paragraph{
@@ -259,14 +261,14 @@ body.dark .redesSociales{
 .dudleyDelgadoRigth{
     background-color: #EEEEEE;
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 270px;
+    height: 270px;
 }
 
 .dudleyDelgadoRigth__img{
-    width: 400px;
+    width: 270px;
     position: relative;
-    bottom: 50px;
+    bottom: 35px;
     border-radius: 50%;
 }
 
@@ -442,6 +444,7 @@ body.dark .skills__containerIcon:hover{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        margin-top: 90px;
     }
 
     .dudleyDelgado__title{
@@ -459,6 +462,20 @@ body.dark .skills__containerIcon:hover{
     .dudleyDelgado__paragraph{
         font-size: 1.8rem;
         text-align: left;
+    }
+
+    .dudleyDelgadoRigth{
+        background-color: #EEEEEE;
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .dudleyDelgadoRigth__img{
+        width: 400px;
+        position: relative;
+        bottom: 50px;
+        border-radius: 50%;
     }
 
     .skills__icons{
