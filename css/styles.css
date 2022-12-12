@@ -85,6 +85,10 @@ svg {
   fill: currentColor;
 }
 
+#mouse{
+    display: none;
+}
+
 body {
   min-height: 100vh;
   font-size: 100%;
@@ -560,6 +564,7 @@ body.dark .project{
         background-color: var(--negro);
         color: var(--blanco);
         padding: 50px 0;
+        margin-top: 80px;
       }
 
       body.dark .footer-container{
@@ -588,6 +593,21 @@ body.dark .project{
 
 
 @media (min-width: 992px){
+
+    #mouse {
+        width: 3em;
+        height: 3em;
+        background: var(--gris-oscuro);
+        position: absolute;
+        border: 5px solid #fff;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        box-shadow: rgba(100, 100, 111, 0.473) 0 7px 29px 0;
+        transition: 0.1s ease-out;
+        z-index: 100;
+        display: inline;
+      }
+
     .nav__rigth__hamburguer{
         display: none;
     }
@@ -762,6 +782,7 @@ body.dark .project{
       .footer-container{
         display: flex;
         justify-content: space-around;
+        margin-top: 0px;
       }
 
       .footer-child:last-child{
