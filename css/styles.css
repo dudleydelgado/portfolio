@@ -401,6 +401,7 @@ body.dark .project{
 
 .projects__img{
     width: 90%;
+    height: 300px;
     margin: auto;
     border-radius: 10px;
 }
@@ -487,6 +488,10 @@ body.dark .project{
         outline: 0;
         padding: 4px 20px 0;
         width: 100%;
+      }
+
+      body.dark .input {
+        background-color: var(--negro);
       }
       
       .cut {
@@ -590,8 +595,6 @@ body.dark .project{
       }
 
 
-
-
 @media (min-width: 992px){
 
     #mouse {
@@ -599,13 +602,17 @@ body.dark .project{
         height: 3em;
         background: var(--gris-oscuro);
         position: absolute;
-        border: 5px solid #fff;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         box-shadow: rgba(100, 100, 111, 0.473) 0 7px 29px 0;
         transition: 0.1s ease-out;
         z-index: 100;
         display: inline;
+        border: 1px solid var(--blanco);
+      }
+
+      body.dark #mouse {
+        background: var(--blanco);
       }
 
     .nav__rigth__hamburguer{
@@ -787,5 +794,23 @@ body.dark .project{
 
       .footer-child:last-child{
         display: flex;
+      }
+
+      .btn__scrollTop{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--negro);
+        color: white;
+        padding: 15px 20px;
+        border: 1px solid white;
+        border-radius: 100%;
+        cursor: pointer;
+        transform: translateY(100px);
+        transition: .3s;
+      }
+
+      .btn__scrollOn{
+        transform: translateY(0);
       }
 }

@@ -4,6 +4,7 @@ const btnSwitch = document.querySelector('#switch')
 const btnDesktopSwitch = document.querySelector('#switch__desktop')
 let docTitle = document.title;
 let myDiv = document.getElementById("mouse");
+const btnScroll = document.getElementById('btn__scrollTop')
 
 window.addEventListener('blur', ()=>{
     document.title = 'Come back :(';
@@ -47,8 +48,8 @@ function isTouchDevice() {
       var y = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
     } catch (e) {}
     //set left and top of div based on mouse position
-    myDiv.style.left = x - 20 + "px";
-    myDiv.style.top = y - 20 + "px";
+    myDiv.style.left = x - 25 + "px";
+    myDiv.style.top = y - 25 + "px";
   };
   //For mouse
   document.addEventListener("mousemove", (e) => {
@@ -58,3 +59,19 @@ function isTouchDevice() {
   document.addEventListener("touchmove", (e) => {
     move(e);
   });
+
+  btnScroll.addEventListener('click', () => {
+    window.scrollTo(0, 0)
+  })
+
+  window.onscroll = () => {
+    add_btn_scrolltop()
+  }
+
+  const add_btn_scrolltop = () => {
+    if(window.scrollY < 400){
+      btnScroll.classList.remove('btn__scrollOn')
+    } else {
+      btnScroll.classList.add('btn__scrollOn')
+    }
+  }
